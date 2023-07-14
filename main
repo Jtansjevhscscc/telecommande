@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Page 1</title>
+</head>
+<body>
+    <h1>Page 1</h1>
+    <button onclick="redirectToPage2()">Ouvrir Google</button>
+
+    <script>
+        function redirectToPage2() {
+            // Envoi de la requête à la page 2 avec le lien à ouvrir
+            var link = 'https://www.google.fr/webhp';
+            var url = 'page2.html?link=' + encodeURIComponent(link);
+            window.location.href = url;
+        }
+    </script>
+</body>
+</html>
